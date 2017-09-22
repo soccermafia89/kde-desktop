@@ -1,5 +1,8 @@
 ---
 
+- name: Install Xorg
+  command: /bin/bash -c "yum -y groupinstall 'X Window System'"
+
 - name: Install KDE
   command: /bin/bash -c "yum -y install @kde-desktop"
 
